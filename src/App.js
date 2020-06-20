@@ -1,31 +1,18 @@
-import React from "react";
-import "./App.css";
-import Particles from "react-particles-js";
+import React from 'react';
+import './App.css';
+import { ParticlesWrapper } from './components/ParticlesWrapper';
+import TitlePage from './components/TitlePage';
+
 const App = () => {
   return (
-    <div className="App">
-      Portfolio
-      <Particles
-        params={{
-          particles: {
-            number: {
-              value: 50,
-            },
-            size: {
-              value: 3,
-            },
-          },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: true,
-                mode:"grab",
-              },
-            },
-          },
-        }}
-      />
-    </div>
+    <React.Fragment>
+      <div className="content">
+        <div>
+          <TitlePage />
+        </div>
+      </div>
+      <ParticlesWrapper />
+    </React.Fragment>
   );
 };
 
