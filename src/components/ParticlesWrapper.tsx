@@ -1,5 +1,5 @@
 import React from 'react';
-import Particles from 'react-tsparticles';
+import Particles, { MoveDirection } from 'react-tsparticles';
 
 export const ParticlesWrapper = () => {
   return (
@@ -26,8 +26,8 @@ export const ParticlesWrapper = () => {
             distance: 125,
           },
           move: {
+            direction: MoveDirection.bottom,
             enable: true,
-            direction: 'bottom',
             speed: 0.09,
           },
           size: {
