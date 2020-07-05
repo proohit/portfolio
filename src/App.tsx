@@ -6,6 +6,7 @@ import { NavBar } from './components/NavBar';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { About } from './about/Abouts';
 
 const App = () => {
   const handleScroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
@@ -18,6 +19,7 @@ const App = () => {
       <NavBar />
       <TitlePage checkScroll={handleScroll} />
       <Container onScroll={handleScroll} fluid>
+        <About />
         <Row>
           <Col className="text-light text-center">Test1</Col>
         </Row>

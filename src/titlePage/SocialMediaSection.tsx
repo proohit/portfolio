@@ -11,12 +11,12 @@ import config from '../config';
 
 export const SocialMediaSection = () => {
   return (
-    <Nav fill className="justify-content-center">
+    <Nav className="justify-content-around">
       <Nav.Item>
         <Nav.Link
           target="_blank"
           href={config.gitHubLink}
-          className="text-light"
+          className="text-light "
         >
           <FontAwesomeIcon size="3x" icon={faGithub} />
         </Nav.Link>
