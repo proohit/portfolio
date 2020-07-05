@@ -4,7 +4,7 @@ import Particles, { MoveDirection } from 'react-tsparticles';
 export const ParticlesWrapper = () => {
   return (
     <Particles
-      className="bg-dark position-fixed w-100 h-100"
+      className="position-fixed w-100 h-100"
       params={{
         particles: {
           twinkle: {
@@ -24,7 +24,7 @@ export const ParticlesWrapper = () => {
           line_linked: {
             enable: true,
             opacity: 0.05,
-            distance: 225,
+            distance: 150,
           },
           move: {
             direction: MoveDirection.bottom,

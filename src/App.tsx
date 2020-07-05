@@ -13,7 +13,7 @@ const App = () => {
     console.log(e.currentTarget.getBoundingClientRect());
   };
   return (
-    <React.Fragment>
+    <div className="bg-dark">
       <ParticlesWrapper />
       <NavBar />
       <TitlePage checkScroll={handleScroll} />
@@ -40,7 +40,7 @@ const App = () => {
           <Col className="text-light text-center">Test1</Col>
         </Row>
       </Container>
-    </React.Fragment>
+    </div>
   );
 };
 
