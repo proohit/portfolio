@@ -1,5 +1,6 @@
 html {
   background-color: rgb(48, 48, 48);
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
