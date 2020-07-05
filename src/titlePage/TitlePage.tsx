@@ -11,11 +11,7 @@ const TitlePage: FunctionComponent<{
 }> = (props) => {
   const { checkScroll } = props;
   return (
-    <Container
-      onScroll={checkScroll}
-      fluid
-      className="vh-100 d-flex align-items-center"
-    >
+    <div onScroll={checkScroll} className="vh-100 d-flex align-items-center">
       <Container className="mb-5 d-flex flex-column justify-content-center">
         <Row>
           <Col xs={1} lg={1} md={1} />
@@ -39,15 +35,18 @@ const TitlePage: FunctionComponent<{
           <Col lg={2} />
         </Row>
       </Container>
-      <div
+      <Container
+        fluid
         style={{
           bottom: 25,
         }}
-        className="position-absolute d-flex w-100 align-items-end justify-content-center"
+        className="position-absolute smooth-scroll liist-unstyled d-flex w-100 align-items-end justify-content-center"
       >
-        <div className="text-center text-light gg-arrow-down slide-top" />
-      </div>
-    </Container>
+        <a href="#about">
+          <div className="text-center text-light gg-arrow-down slide-top" />
+        </a>
+      </Container>
+    </div>
   );
 };
 
