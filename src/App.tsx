@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { ParticlesWrapper } from './components/ParticlesWrapper';
-import TitlePage from './components/TitlePage';
+import TitlePage from './titlePage/TitlePage';
 import { NavBar } from './components/NavBar';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
