@@ -1,18 +1,16 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
+import Badge from 'react-bootstrap/Badge';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import config from '../config';
 
 export const About = () => {
   return (
-    <Container
-      id="about"
-      className="bg-transparent border border-secondary rounded text-light d-flex justify-content-center flex-column"
-    >
+    <Jumbotron id="about" fluid className="p-5">
       <Row>
         <Col className="text-center m-4">
-          <h2>About me</h2>
+          <h1 className="display-4">About me</h1>
         </Col>
       </Row>
       <Row>
@@ -25,26 +23,34 @@ export const About = () => {
           </p>
           <p>
             Currently, I'm enrolled in the business informatics / information
-            systems bachelor's degree at the{' '}
-            <a
-              className="badge badge-secondary"
-              href="https://www.hdm-stuttgart.de/en"
-            >
-              Stuttgart Media University
-            </a>
+            systems bachelor's degree at the
+            <Badge variant="secondary">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light"
+                href="https://www.hdm-stuttgart.de/en"
+              >
+                Stuttgart Media University
+              </a>
+            </Badge>{' '}
             . Right now, I'm passing the fifth semester of the 7 semester long
             degree which includes an internship. I'm having this @
-            <a
-              className="badge badge-secondary"
-              href="https://www.exxeta.com/en/"
-            >
-              EXXETA AG
-            </a>{' '}
+            <Badge variant="secondary">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-light"
+                href="https://www.exxeta.com/en/"
+              >
+                EXXETA AG
+              </a>
+            </Badge>{' '}
             in Stuttgart.
           </p>
         </Col>
         <Col lg={2} md={2} />
       </Row>
-    </Container>
+    </Jumbotron>
   );
 };
