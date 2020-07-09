@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Row from 'react-bootstrap/Row';
 import { SocialMediaSection } from './SocialMediaSection';
-import config from '../config';
+import TitleHeader from './TitleHeader';
 
 const TitlePage: FunctionComponent<{
   checkScroll: (e: React.UIEvent<HTMLDivElement, UIEvent>) => void;
@@ -16,7 +16,7 @@ const TitlePage: FunctionComponent<{
         <Row>
           <Col xs={1} lg={1} md={1} />
           <Col className="text-center text-light">
-            <h1 className="pb-3 mb-2">{`Hi, I'm ${config.name}!`}</h1>
+            <TitleHeader />
           </Col>
           <Col xs={1} lg={1} md={1} />
         </Row>
