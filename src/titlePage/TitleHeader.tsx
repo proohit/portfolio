@@ -33,6 +33,7 @@ const TitleHeader = () => {
         delay={1500}
         speed={-20}
       />
+      <Typing.Delay ms={750} />
     </Typing>
   );
 };
