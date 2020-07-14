@@ -5,13 +5,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import config from '../config';
 import { Section } from '../components/Section';
+import Image from 'react-bootstrap/Image';
+import profileImage from '../assets/profileImage.jpg';
 
 export const About = () => {
   return (
     <Jumbotron fluid className="p-5">
       <Section fluid id="about" title="About me">
         <Row>
-          <Col lg={2} md={2} />
+          <Col lg={4} md={4} sm={4}>
+            <Image className="h-100 w-100" src={profileImage}></Image>
+          </Col>
           <Col className="text-justify">
             <p>
               My name name is {config.fullName} and I'm an information systems
@@ -46,7 +50,6 @@ export const About = () => {
               in Stuttgart.
             </p>
           </Col>
-          <Col lg={2} md={2} />
         </Row>
       </Section>
     </Jumbotron>
